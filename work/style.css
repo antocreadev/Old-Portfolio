@@ -3,7 +3,10 @@ body {
   text-align: center;
   font-family: "Averia Serif Libre", cursive;
 }
-
+footer {
+  height: 300px;
+  width: auto;
+}
 h1 {
   text-align: left;
   text-decoration: underline;
