@@ -1,0 +1,464 @@
+html,
+body {
+  overflow: hidden;
+}
+* {
+  box-sizing: content-box;
+}
+body {
+  background: linear-gradient(-30deg, #fff9ad, #e6afa8, #cfd1f4, #b1deb8);
+
+  animation: gradient 5s ease infinite;
+  background-size: 400% 400%;
+}
+main {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+p {
+  color: #7b7b7b;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  color: #505050;
+}
+
+article,
+section,
+aside,
+li,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: unset;
+  font-size: 25px;
+  width: 200px;
+}
+
+#surprise {
+  z-index: -10;
+  position: absolute;
+  left: 25vw;
+  top: 20vh;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animation
+du tetx et des images  */
+
+.text-animation {
+  animation: text-animation 0.7s cubic-bezier(0.2, 0.6, 0.3, 1) both;
+}
+
+@keyframes text-animation {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*--------------------------------------*/
+#mouvement_un,
+#mouvement_deux,
+#mouvement_trois,
+#mouvement_quattre,
+#mouvement_cinq,
+#mouvement_six,
+#mouvement_sept,
+#mouvement_huit,
+#mouvement_neuf,
+#mouvement_dix {
+  position: absolute;
+  z-index: 1;
+  background-color: #f9f9f9;
+  text-align: center;
+  width: 40%;
+  height: 45%;
+  border-radius: 30px;
+  cursor: move;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+}
+/* mettre de l'ombre et rendre le background color plus blanc lorsque su'on passe la souris au dessus */
+#mouvement_un:hover,
+#mouvement_deux:hover,
+#mouvement_trois:hover,
+#mouvement_quattre:hover,
+#mouvement_cinq:hover,
+#mouvement_six:hover,
+#mouvement_sept:hover,
+#mouvement_huit:hover,
+#mouvement_neuf:hover,
+#mouvement_dix:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+  background-color: #fdfdfd;
+}
+
+.none {
+  display: none;
+}
+/*---------------------UN---------------------*/
+
+/* div preséntation, Anthony Menghi */
+#mouvement_un {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 577px;
+  height: 380px;
+  left: 25vw;
+  top: 20vh;
+}
+#mouvement_un p {
+  margin: 5%;
+  margin-top: 10%;
+}
+#mouvement_un #about {
+  width: 100%;
+  border-radius: 30px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+#mouvement_un #circle {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0f0;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+#mouvement_un #student {
+  width: 100%;
+}
+#mouvement_un h1,
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+#mouvement_un h2 {
+  width: 100%;
+  height: 10%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #f0f0f0;
+}
+
+/*animation de ma tête */
+.animation-tete {
+  animation: animation-tete 1s cubic-bezier(0.2, 0.4, 0.4, 0.9) infinite both;
+}
+
+@keyframes animation-tete {
+  0% {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+/* -----------------------DEUX---------------------*/
+
+/* div video */
+
+#mouvement_deux {
+  right: 5%;
+  width: 580.96px;
+  height: 337px;
+  left: 2vw;
+  top: 50vh;
+  /* cursor: url("pause.png"), auto; */
+  z-index: -2;
+}
+#mouvement_deux header {
+  width: 100%;
+  height: 10%;
+  background-color: #f0f0f0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+#mouvement_deux h1 {
+  margin: 0px;
+}
+
+#mouvement_deux video {
+  width: 100%;
+
+  border-radius: 30px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+
+  margin: 0px;
+  padding: 0px;
+
+  position: relative;
+  top: 0px;
+}
+
+/* -------------------TROIS-------------------------*/
+
+/* div linkedin */
+#mouvement_trois {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 112px;
+  height: 400px;
+
+  left: 90vw;
+  top: 46.5vh;
+
+  z-index: 2;
+}
+#mouvement_trois #ln {
+  margin-top: 10px;
+}
+#mouvement_trois #instagram {
+  border-radius: 50px;
+}
+
+/* -----------------------QUATTRE---------------------*/
+#mouvement_quattre {
+  width: 250px;
+  height: 210px;
+  left: 1vw;
+  top: 0.5vh;
+}
+#mouvement_quattre img {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 90%;
+  width: 100%;
+}
+
+/*------------- CINQ -----------------*/
+#mouvement_cinq {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  width: 109.14px;
+  height: 98px;
+  left: 30vw;
+  top: 2vh;
+}
+
+/*------------- SIX -----------------*/
+#mouvement_six {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 283.17px;
+  height: 80px;
+  left: 50vw;
+  top: 7vh;
+}
+/*------------- SEPT -----------------*/
+#mouvement_sept {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 189.24px;
+  height: 93px;
+  left: 45vw;
+  top: 85vh;
+}
+/*------------- HUIT -----------------*/
+#mouvement_huit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 395.1px;
+  height: 450px;
+  left: 60vw;
+  top: 40vh;
+}
+#mouvement_huit .rect {
+  width: 100px;
+  height: 15px;
+  background-color: #f0f0f0;
+  display: inline-block;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+#mouvement_huit .competence {
+  height: 15px;
+  background: linear-gradient(89.97deg, #e6afa8 0.47%, #fff9ad 100.42%);
+  border-radius: 30px;
+}
+.un {
+  width: 80px;
+}
+.deux {
+  width: 90px;
+}
+.trois {
+  width: 55px;
+}
+.quattre {
+  width: 70px;
+}
+#mouvement_huit #pere {
+  width: 90%;
+}
+#mouvement_huit li {
+  list-style-type: none;
+}
+#mouvement_huit h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+/*------------- NEUF -----------------*/
+#mouvement_neuf {
+  width: 408px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  left: 70vw;
+  z-index: -1;
+}
+/*------------- DIX -----------------*/
+#mouvement_dix {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  width: 200px;
+  height: 98px;
+  left: 10vw;
+  top: 35vh;
+}
+@media (orientation: portrait) {
+  html,
+  body {
+    overflow: scroll;
+  }
+  #mouvement_un,
+  #mouvement_deux,
+  #mouvement_trois,
+  #mouvement_quattre,
+  #mouvement_cinq,
+  #mouvement_six,
+  #mouvement_sept,
+  #mouvement_huit,
+  #mouvement_neuf,
+  #mouvement_dix {
+    position: static;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  #mouvement_quattre,
+  #mouvement_neuf,
+  #mouvement_deux,
+  #surprise {
+    display: none;
+  }
+
+  #mouvement_trois {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /*
+  #mouvement_deux {
+    width: 100%;
+  }
+  #mouvement_deux header {
+    width: 100%;
+    height: 10%;
+  }
+  #mouvement_deux header {
+    margin: 0px;
+  }
+
+  #mouvement_deux video {
+    width: 100%;
+    height: 303px;
+
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+    margin: 0px;
+    padding: 0px;
+  }
+*/
+}
+
+/* 
+RESPONSIVE ET MEDIAQUERIES
+
+on utlise la balise en choisissant la taille  : 
+
+- @media( width : taille ){}
+        ( min-width :    ){} du break point jusqu'à superieur, on monte
+        ( max-width :     ){} du break point jusqu'à inferieur, on descend 
+
+
+on utlise la balise en choisissant le type d'appareil : 
+
+- @media all(){} : pour tout les appareils 
+- @media screen(){} : tout les écrans 
+- @media speech(){} : synthèse voale
+- @media print(){} : quand on imprime le site 
+
+les requettes media utilise des conditions donc il faut utliser : 
+- and : et  : pour cree des internva min-width:700 and max-width:1000 : le responsive de 700 à 1000
+- not : n'est pas 
+- only : seulement
+
+
+détecter l'orientation de l'écran :
+pour un mode portrait : 
+    - @media (orientation: portrait){}
+pour un mode landscapte :
+    - @media (orientation: landscape) {}
+*/

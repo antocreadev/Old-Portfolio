@@ -1,0 +1,210 @@
+body {
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: "Averia Serif Libre", cursive;
+}
+.none {
+  display: none;
+}
+h1 {
+  text-align: left;
+  text-decoration: underline;
+}
+#parentimg {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  position: fixed;
+  top: 83vh;
+  left: 15vw;
+
+  width: 70vw;
+  height: 15vh;
+  background: rgba(233, 233, 233, 0.9);
+  border-radius: 30px;
+  margin: auto;
+}
+nav a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  justify-content: center;
+}
+.categorie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 8vh;
+}
+
+nav .categorie:hover {
+  background-color: #c4c4c4;
+  border-radius: 30px;
+}
+#centre {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 74vh;
+  z-index: 3;
+}
+#versH {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 70px;
+  background: #eaeaea;
+  position: fixed;
+}
+#versH img {
+  width: 70px;
+  height: 70px;
+}
+#versH:hover {
+  background-color: #c4c4c4;
+}
+
+article section {
+  display: flex;
+  align-items: center;
+}
+
+.group-competence {
+  margin-bottom: 5vh;
+}
+.parent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.enfant {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.enfant img {
+  margin: 2%;
+}
+
+.verticale {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  border-right: 5px inset #000;
+  font-size: x-large;
+  margin: 0px;
+  justify-content: flex-start;
+}
+footer {
+  height: 200px;
+}
+.rect {
+  width: 20vw;
+  height: 2vh;
+  background-color: #f0f0f0;
+  display: inline-block;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+.competence {
+  height: 2vh;
+  background: linear-gradient(89.97deg, #e6afa8 0.47%, #fff9ad 100.42%);
+  border-radius: 30px;
+}
+#comp1 {
+  width: 19vw;
+}
+#comp2 {
+  width: 13vw;
+}
+#comp3 {
+  width: 8vw;
+}
+#comp4 {
+  width: 17.5vw;
+}
+#comp5 {
+  width: 16vw;
+}
+#comp6 {
+  width: 9vw;
+}
+#comp7 {
+  width: 12vw;
+}
+#comp8 {
+  width: 9vw;
+}
+#comp9 {
+  width: 16vw;
+}
+#comp10 {
+  width: 10vw;
+}
+#comp11 {
+  width: 18vw;
+}
+#comp12 {
+  width: 17vw;
+}
+#comp13 {
+  width: 13vw;
+}
+#comp14 {
+  width: 6vw;
+}
+#comp15 {
+  width: 14vw;
+}
+.img-animation {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.img-animation:hover {
+  transform: scale(1.05);
+}
+.nav-centre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#parcours p {
+  text-align: left;
+}
+#parcours img {
+  margin-right: 5px;
+}
+@media (orientation: portrait) {
+  nav a {
+    font-size: medium;
+  }
+  .categorie {
+    width: 20vw;
+  }
+  #qui img {
+    width: 33%;
+    height: auto;
+    margin: 2px;
+  }
+  #parentimg {
+    justify-content: flex-start;
+  }
+  #parcours img {
+    width: 50%;
+  }
+  #competence img {
+    width: 40%;
+  }
+}

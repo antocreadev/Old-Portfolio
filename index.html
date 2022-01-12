@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="src/vignette_platformer.jpg" type="favicon/ico"/>
+  <title>Anthony Menghi</title>
+</head>
+<body>
+  
+  <main>
+
+    <article id="mouvement_un" onclick="up(1,0,0,0,0,0,0,0,0,0)">
+      <h2 class="none">Présentation</h2>
+      <section>
+        <header>
+            <h2 class="text-animation">Anthony Menghi</h2>
+        </header>
+        
+        <p> 
+          <img class="animation-tete" src="src/moi-rigolo.png" alt="" width="50" height="50">
+          Enchanté, je m'appelle Anthony, je suis étudiant en métier du multimédia et de l'internet pour devenir développeur créatif.
+           J'aime manipuler le code et les algorithmes pour faire tourner mes dessins ! Sur cette page vous pourrez tout bouger et naviguer pour découvrir mon CV, mes projets, mes compétences et en savoir plus sur moi.
+          <br>
+          N'hésitez pas à me contacter !
+        </p>
+        </section>
+        <nav id="about">      
+          <div id="circle">
+            <img usemap="#carre" src="src/arrow_about.svg" alt="fleche vers en savoir plus" width="50" height="50">
+            <map name="carre">
+              <area shape="rect" coords="0,0,50,50" href="aboutMe" alt="">
+            </map>
+          </div>
+        </nav>
+      </article>
+      
+      <article id="mouvement_deux" onclick="up(0,1,0,0,0,0,0,0,0,0)">
+        <header>
+          <h1 class="text-animation">Video Présentation</h1>
+        </header>
+        <section>
+          <h2 class="none"> vidéo de présentation</h2>
+          <video controls >
+            <source src="src/video.mp4">
+          </video>
+        </section>
+      </article>
+      
+      <!-- FAIRE LA SEMANTIQUE DE MOUVEMENT TROIS -->
+      <aside id="mouvement_trois" onclick="up(0,0,1,0,0,0,0,0,0,0)">
+        <img usemap="#ln" src="src/ln.png" alt="logo linkedin" width="50" height="50" id="ln">
+        <map name="ln">
+          <area shape="circle" coords="25,25,25"  target="_blank" href="https://www.linkedin.com/in/anthony-menghi/" alt="">
+        </map>
+        
+        <img usemap="#github" src="src/github.png" alt="logo github" width="50" height="50">
+        <map name="github">
+          <area shape="circle" coords="25,25,25"  target="_blank" href="https://github.com/anthopy" alt="">
+        </map>
+        
+        <img id="instagram" usemap="#instagram" src="src/instagram.png" alt="logo instagram" width="50" height="50">
+        <map name="instagram">
+          <area shape="circle" coords="25,25,25"  target="_blank" href="https://www.instagram.com/antho.py/" alt="">
+        </map>
+        
+        <img usemap="#email" src="src/email.png" alt="logo email" width="50" height="50">
+        <map name="email">
+          <area shape="circle" coords="25,25,25"  target="_blank" href="contact" alt="">
+        </map>
+        
+        <img usemap="#replit" src="src/replit.png" alt="logo replit" width="50" height="50">
+        <map name="replit">
+          <area shape="circle" coords="25,25,25"  target="_blank" href="https://replit.com/@anthopy" alt="">
+        </map>
+        
+        <img usemap="#twittter" src="src/twitter.png" alt="logo twitter" width="50" height="50">
+        <map name="twittter">
+          <area shape="circle" coords="25,25,25"  target="_blank" href="https://twitter.com/anthoppm" alt="">
+        </map>
+      </aside>
+      
+      
+      <article id="mouvement_quattre" onclick="up(0,0,0,1,0,0,0,0,0,0)">
+        <header>
+          <h2 class="text-animation">Game Development</h2>
+        </header>
+        <section>
+          <h2 class="none">Vignette du mon jeu</h2>
+          <img usemap="#vignette_guigui" src="src/vignette_platformer.jpg" alt="vignette guigui" width="250" height="250">
+          <map name="vignette_guigui">
+            <area shape="rect" coords="0,0,300,300" target="_blank" href="Projet" alt="vers la page projet">
+          </map>
+        </section>
+      </article>
+      
+      
+      <article id="mouvement_cinq" onclick="up(0,0,0,0,1,0,0,0,0,0)">
+        <h1 class="none">Curriculum vitae en pdf</h1>
+        <a target="_blank" href="src/cv.pdf">CV</a> <!-- rajouter l'attribut dowload pour directement le télécharger -->
+      </article>
+      
+      
+      <article id="mouvement_six" onclick="up(0,0,0,0,0,1,0,0,0,0)">
+        <h1 class="none">En savoir plus</h1>
+        <a target="_blank" href="aboutMe">À propos</a> 
+      </article>
+      
+      <article id="mouvement_sept" onclick="up(0,0,0,0,0,0,1,0,0,0)">
+        <h1 class="none">Mes travaux</h1>
+        <a target="_blank" href="work">Travaux</a>
+      </article>
+      
+      
+      
+      
+      <article id="mouvement_neuf" onclick="up(0,0,0,0,0,0,0,0,1,0)">
+        <h2 class="text-animation">Mon dernier projet</h2>
+        <img usemap="#dernier_projet" src="src/last_project.png" alt="dernier projet" width="408" height="290">
+        <map name="dernier_projet">
+          <area shape="rect" coords="0,0,408,290" href="work/index.html" alt="">
+        </map>
+        
+      </article>
+      
+      
+      <article id="mouvement_dix" onclick="up(0,0,0,0,0,0,0,0,0,1)">
+        <h1 class="none">Mes travaux</h1>
+        <a class="text-shadow-pop-left" target="_blank" href="contact/">Contact</a>
+      </map>
+      
+    </article>
+    
+    <article id="mouvement_huit" onclick="up(0,0,0,0,0,0,0,1,0,0)">
+      <h1 class="text-animation">Mes compétences</h1>
+      <div id="pere">
+          <ul>
+          <li><img src="src/adobe.png" alt=""> <progress class="none" value="78" max="100">0%</progress><div class="rect">  <div class="competence un"></div>  </div></li>
+          <br>
+          <li> <img src="src/dev.png" alt=""> <progress class="none" value="78" max="100">0%</progress> <div class="rect">  <div class="competence deux"></div>   </div> </li> 
+          <br>
+          <li> <img src="src/g30.png" alt=""> <progress value="78" class="none" max="100">0%</progress> <div class="rect">  <div class="competence trois"></div>   </div> </li> 
+          <br>
+          <li> <img src="src/phppy.png" alt=""> <progress value="78" class="none" max="100">0%</progress> <div class="rect">  <div class="competence quattre"></div>    </div> </li> 
+          <br>
+        </ul>       
+    </article>
+    
+    <section>
+      <img id="surprise" src="src/luffy.png" alt="">
+    </section>
+    
+  </main> 
+  <script src=app.js></script>    
+</body>
+</html>

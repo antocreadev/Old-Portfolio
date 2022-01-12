@@ -1,0 +1,127 @@
+body {
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: "Averia Serif Libre", cursive;
+}
+
+h1 {
+  text-align: left;
+  text-decoration: underline;
+}
+nav {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  position: fixed;
+  top: 83vh;
+  left: 15vw;
+
+  width: 70vw;
+  height: 15vh;
+  background: rgba(233, 233, 233, 0.9);
+  border-radius: 30px;
+  margin: auto;
+}
+nav a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  justify-content: center;
+}
+.categorie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 8vh;
+}
+nav .categorie:hover {
+  background-color: #c4c4c4;
+  border-radius: 30px;
+}
+#centre {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 74vh;
+  z-index: 3;
+}
+#versH {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 70px;
+  background: #eaeaea;
+  position: fixed;
+}
+#versH img {
+  width: 70px;
+  height: 70px;
+}
+#versH:hover {
+  background-color: #c4c4c4;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+.enfant {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.enfant img {
+  margin: 5%;
+}
+@media (orientation: portrait) {
+  nav a {
+    font-size: medium;
+  }
+  .categorie {
+    width: 20vw;
+  }
+  img {
+    width: 40%;
+    height: auto;
+  }
+  #mediaculutre {
+    width: 60%;
+    height: 40%;
+  }
+}
+
+/*  Animation des images projets */
+.animation-projet {
+  animation: animation-projet 0.45s ease-out both;
+  z-index: -1;
+}
+.nav-centre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes animation-projet {
+  0% {
+    transform: translateZ(-800px) rotate3d(-1, 1, 0, -90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  54% {
+    transform: translateZ(-160px) rotate3d(-1, 1, 0, -87deg);
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(0) rotate3d(-1, 1, 0, 0);
+    animation-timing-function: ease-out;
+  }
+}

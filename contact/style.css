@@ -1,0 +1,148 @@
+body {
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+nav {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  position: fixed;
+  top: 83vh;
+  left: 15vw;
+
+  width: 70vw;
+  height: 15vh;
+  background: rgba(233, 233, 233, 0.9);
+  border-radius: 30px;
+  margin: auto;
+}
+nav a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  justify-content: center;
+}
+.categorie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 8vh;
+}
+nav .categorie:hover {
+  background-color: #c4c4c4;
+  border-radius: 30px;
+}
+#centre {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 74vh;
+  z-index: 3;
+}
+#versH {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 70px;
+  background: #eaeaea;
+  position: fixed;
+}
+#versH img {
+  width: 70px;
+  height: 70px;
+}
+#versH:hover {
+  background-color: #c4c4c4;
+}
+
+form {
+  background-color: white;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  border-radius: 30px;
+}
+input {
+  background-color: #edecec;
+  outline: invert;
+  border: inherit;
+  border-radius: 30px;
+  width: 60vw;
+  height: 5vh;
+  padding: 5px;
+}
+input[type="submit"] {
+  width: 15vw;
+  height: 10vh;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  padding: 0px;
+}
+input[value="Envoyer"] {
+  font-size: 120%;
+}
+textarea {
+  background-color: #edecec;
+  outline: invert;
+  border: inherit;
+  border-radius: 30px;
+  width: 60vw;
+  height: 20vh;
+  min-width: 60vw;
+  min-height: 20vh;
+  max-height: 20vh;
+  max-width: 60vw;
+  padding: 10px;
+}
+form div {
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: start;
+}
+.nav-centre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (orientation: portrait) {
+  nav a {
+    font-size: medium;
+  }
+  .categorie {
+    width: 20vw;
+  }
+  h1 {
+    font-size: x-large;
+  }
+}
+.text-animation {
+  animation: text-animation 0.7s cubic-bezier(0.2, 0.6, 0.3, 1) both;
+}
+
+@keyframes text-animation {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
