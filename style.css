@@ -334,6 +334,7 @@ h2 {
 }
 #mouvement_huit li {
   list-style-type: none;
+  margin: 20px;
 }
 #mouvement_huit h1 {
   display: flex;

@@ -69,7 +69,9 @@ nav .categorie:hover {
 #versH:hover {
   background-color: #c4c4c4;
 }
-
+footer {
+  height: 200px;
+}
 form {
   background-color: white;
   width: 90%;

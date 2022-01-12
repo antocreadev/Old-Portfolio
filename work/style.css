@@ -3,9 +3,8 @@ body {
   text-align: center;
   font-family: "Averia Serif Libre", cursive;
 }
-footer {
-  height: 300px;
-  width: auto;
+.none {
+  display: none;
 }
 h1 {
   text-align: left;
@@ -26,6 +25,7 @@ nav {
   background: rgba(233, 233, 233, 0.9);
   border-radius: 30px;
   margin: auto;
+  z-index: 1;
 }
 nav a {
   display: flex;
@@ -51,7 +51,6 @@ nav .categorie:hover {
   justify-content: center;
   position: fixed;
   top: 74vh;
-  z-index: 3;
 }
 #versH {
   z-index: 2;
@@ -100,18 +99,19 @@ section {
     height: 40%;
   }
 }
-
+footer {
+  height: 300px;
+  width: auto;
+}
 /*  Animation des images projets */
 .animation-projet {
   animation: animation-projet 0.45s ease-out both;
-  z-index: -1;
 }
 .nav-centre {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
 @keyframes animation-projet {
   0% {
     transform: translateZ(-800px) rotate3d(-1, 1, 0, -90deg);
@@ -124,7 +124,12 @@ section {
     opacity: 1;
   }
   100% {
-    transform: translateZ(0) rotate3d(-1, 1, 0, 0);
+    transform: translateZ(0px) rotate3d(-1, 1, 0, 0deg);
     animation-timing-function: ease-out;
   }
+}
+
+#centre {
+  background-color: blue;
+  z-index: 4;
 }
