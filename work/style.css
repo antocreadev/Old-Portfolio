@@ -3,9 +3,6 @@ body {
   text-align: center;
   font-family: "Averia Serif Libre", cursive;
 }
-.none {
-  display: none;
-}
 h1 {
   text-align: left;
   text-decoration: underline;
@@ -82,6 +79,9 @@ section {
 }
 .enfant img {
   margin: 5%;
+}
+.none {
+  display: none;
 }
 @media (orientation: portrait) {
   nav a {
