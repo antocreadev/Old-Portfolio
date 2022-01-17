@@ -414,6 +414,8 @@ h2 {
     z-index: 1;
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    bottom: 15px;
   }
   #mouvement_un #circle {
     width: 40px;
