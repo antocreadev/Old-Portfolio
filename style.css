@@ -102,7 +102,7 @@ du tetx et des images  */
   cursor: move;
   filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
 }
-/* mettre de l'ombre et rendre le background color plus blanc lorsque su'on passe la souris au dessus */
+/* mettre de l'ombre et rendre le background color plus blanc lorsque qu'on passe la souris au dessus */
 #mouvement_un:hover,
 #mouvement_deux:hover,
 #mouvement_trois:hover,
@@ -175,11 +175,9 @@ h2 {
 @keyframes animation-tete {
   0% {
     transform: rotate(-360deg);
-    opacity: 1;
   }
   100% {
     transform: rotate(0);
-    opacity: 1;
   }
 }
 
@@ -432,59 +430,4 @@ h2 {
     width: 30px;
     height: auto;
   }
-
-  /*
-  #mouvement_deux {
-    width: 100%;
-  }
-  #mouvement_deux header {
-    width: 100%;
-    height: 10%;
-  }
-  #mouvement_deux header {
-    margin: 0px;
-  }
-
-  #mouvement_deux video {
-    width: 100%;
-    height: 303px;
-
-    border-radius: 30px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-
-    margin: 0px;
-    padding: 0px;
-  }
-*/
 }
-
-/* 
-RESPONSIVE ET MEDIAQUERIES
-
-on utlise la balise en choisissant la taille  : 
-
-- @media( width : taille ){}
-        ( min-width :    ){} du break point jusqu'à superieur, on monte
-        ( max-width :     ){} du break point jusqu'à inferieur, on descend 
-
-
-on utlise la balise en choisissant le type d'appareil : 
-
-- @media all(){} : pour tout les appareils 
-- @media screen(){} : tout les écrans 
-- @media speech(){} : synthèse voale
-- @media print(){} : quand on imprime le site 
-
-les requettes media utilise des conditions donc il faut utliser : 
-- and : et  : pour cree des internva min-width:700 and max-width:1000 : le responsive de 700 à 1000
-- not : n'est pas 
-- only : seulement
-
-
-détecter l'orientation de l'écran :
-pour un mode portrait : 
-    - @media (orientation: portrait){}
-pour un mode landscapte :
-    - @media (orientation: landscape) {}
-*/
