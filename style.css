@@ -415,7 +415,7 @@ h2 {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    bottom: 15px;
+    bottom: 30px;
   }
   #mouvement_un #circle {
     width: 40px;
@@ -425,11 +425,14 @@ h2 {
     margin-right: 10px;
     display: flex;
     justify-content: center;
+    position: relative;
+    bottom: 30px;
   }
   #carre {
     width: 30px;
     height: auto;
   }
+
   /*
   #mouvement_deux {
     width: 100%;
