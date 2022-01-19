@@ -177,7 +177,6 @@ footer {
 }
 .nav-centre {
   width: 100%;
-  display: flex;
   justify-content: center;
 }
 #parcours p {
