@@ -7,7 +7,7 @@ body {
 }
 body {
   background: linear-gradient(-30deg, #fff9ad, #e6afa8, #cfd1f4, #b1deb8);
-
+  filter: blur(4px);
   animation: gradient 5s ease infinite;
   background-size: 400% 400%;
 }
